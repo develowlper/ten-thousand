@@ -4,8 +4,11 @@
   "description": "a monorepo for the then tousand game",
   "main": "index.js",
   "scripts": {
+    "clean": "lerna run clean --parallel && rm -rf node_modules && npm i && lerna bootstrap --hoist",
     "build": "lerna run build --parallel",
     "dev": "lerna run dev --parallel",
+    "start": "lerna run start --parallel",
+    "version": "lerna version --conventional-commits",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
