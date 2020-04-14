@@ -1,0 +1,24 @@
+{
+  "name": "ten-thousand",
+  "version": "0.1.0",
+  "description": "a monorepo for the then tousand game",
+  "main": "index.js",
+  "scripts": {
+    "build": "lerna run build --parallel",
+    "dev": "lerna run dev --parallel",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/develowlper/ten-thousand.git"
+  },
+  "author": "develowlper",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/develowlper/ten-thousand/issues"
+  },
+  "homepage": "https://github.com/develowlper/ten-thousand#readme",
+  "dependencies": {
+    "lerna": "^3.20.2"
+  }
+}
