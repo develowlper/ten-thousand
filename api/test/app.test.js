@@ -63,4 +63,22 @@ describe('Feathers application tests (with jest)', () => {
       }
     });
   });
+
+  describe('/games', () => {
+    it('could reach games route', async () => {
+      expect.assertions(1);
+      const { status } = await axios.get(getUrl('/games'));
+      expect(status).toBe(200);
+    });
+
+    it('should get a game with key first-one', async () => {
+      expect.assertions(2);
+      const {
+        data: { data },
+        status,
+      } = await axios.get(getUrl('/games'));
+      expect(status).toBe(200);
+      expect(data.filter((x) => x.key === 'first-one').length).toBe(1);
+    });
+  });
 });
