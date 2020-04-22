@@ -3,7 +3,7 @@ const service = require('feathers-mongodb');
 // eslint-disable-next-line no-unused-vars
 module.exports = async function (app) {
   app.use(
-    '/games',
+    '/game-boards',
     service({
       paginate: {
         default: 2,
@@ -16,5 +16,7 @@ module.exports = async function (app) {
     useUnifiedTopology: true,
   });
 
-  app.service('/games').Model = client.db('ten-thousand').collection('games');
+  app.service('/game-boards').Model = client
+    .db('ten-thousand')
+    .collection('gameBoards');
 };

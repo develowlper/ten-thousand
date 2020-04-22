@@ -1,6 +1,7 @@
 const axios = require('axios');
 const url = require('url');
 const app = require('../src/app');
+const { nanoid } = require('nanoid');
 
 const port = app.get('port') || 8998;
 const getUrl = (pathname) =>
@@ -64,21 +65,35 @@ describe('Feathers application tests (with jest)', () => {
     });
   });
 
-  describe('/games', () => {
-    it('could reach games route', async () => {
+  describe('/game-boards', () => {
+    it('could reach game boards route', async () => {
       expect.assertions(1);
-      const { status } = await axios.get(getUrl('/games'));
+      const { status } = await axios.get(getUrl('/game-boards'));
       expect(status).toBe(200);
     });
 
-    it('should get a game with key first-one', async () => {
+    it('should get a game board with key first-one', async () => {
       expect.assertions(2);
       const {
         data: { data },
         status,
-      } = await axios.get(getUrl('/games'));
+      } = await axios.get(getUrl('/game-boards'));
       expect(status).toBe(200);
       expect(data.filter((x) => x.key === 'first-one').length).toBe(1);
+    });
+
+    it('should be able to create a game board', async () => {
+      expect.assertions(2);
+      const key = `test-${nanoid(5)}`;
+      const url = getUrl('/game-boards');
+      const {
+        status,
+        data: { key: resKey },
+      } = await axios.post(url, {
+        key,
+      });
+      expect(status).toBe(201);
+      expect(resKey).toBe(key);
     });
   });
 });
