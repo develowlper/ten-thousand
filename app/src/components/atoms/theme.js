@@ -8,5 +8,7 @@ export default {
     pink: '#FE46A5',
     black: '#171717',
     lightpink: '#fcb6da',
+    darkpink: '#d4006c',
+    red: '#ff2d2a',
   },
 };
