@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import theme from './theme';
+import theme from '../../styles/theme';
 
 export default styled.input`
   font-size: large;

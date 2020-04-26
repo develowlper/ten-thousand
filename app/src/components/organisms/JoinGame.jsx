@@ -3,9 +3,8 @@ import React, { useState, useCallback } from 'react';
 import randomWords from 'random-words';
 
 import styled from 'styled-components';
-import theme from '../atoms/theme';
+import theme from '../../styles/theme';
 
-import Button from '../atoms/PinkButton';
 import Input from '../atoms/Input';
 
 const Link = styled.a`
@@ -38,11 +37,11 @@ const Actions = styled.div`
   grid-template-columns: 1fr auto;
 `;
 
-const Error = styled.span`
-  color: ${theme.palette.red};
+const P = styled.p`
+  text-align: justify;
 `;
 
-const Component = ({}) => {
+const JoinGame = () => {
   const [key, set] = useState(
     randomWords({ exactly: 1, wordsPerString: 2, separator: '-' })
   );
@@ -51,11 +50,11 @@ const Component = ({}) => {
 
   return (
     <Form>
-      <p>
+      <P>
         Play ten thousand dice game online across multiple devices on a shared
         board. To create a new game or join an existing game, enter a game
         identifier and click 'Let's Play'.
-      </p>
+      </P>
       <Actions>
         <Input value={key} onChange={(e) => set(e.target.value)}></Input>
         <Link ml={0.5} disabled={key?.length < 1} href={`/${key}`}>
@@ -66,10 +65,10 @@ const Component = ({}) => {
   );
 };
 
-Component.displayName = 'Component';
+JoinGame.displayName = 'JoinGame';
 
-Component.propTypes = {};
+JoinGame.propTypes = {};
 
-Component.defaultProps = {};
+JoinGame.defaultProps = {};
 
-export default Component;
+export default JoinGame;
