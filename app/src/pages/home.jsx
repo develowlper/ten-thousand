@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 
 import styled from 'styled-components';
 
+import JoinGame from '../components/organisms/JoinGame';
+
 import Link from '../components/atoms/Link';
 import Headline from '../components/atoms/Headline';
 
@@ -26,7 +28,7 @@ const Home = ({}) => {
           </Link>
         </h3>
       </Headline>
-      {/* <JoinGame /> */}
+      <JoinGame />
     </Box>
   );
 };

@@ -1,28 +1,32 @@
 import React, { useState, useCallback } from 'react';
+import { Link as ReachLink } from '@reach/router';
 
 import randomWords from 'random-words';
 
 import styled from 'styled-components';
-import theme from '../../styles/theme';
 
 import Input from '../atoms/Input';
 
-const Link = styled.a`
-  color: inherit;
-  text-decoration: none;
-  background: ${theme.palette.pink};
-  font-size: large;
-  text-transform: uppercase;
-  padding: 0.5rem 1rem;
-  font-weight: bold;
-  border: none;
-  margin-left: ${(props) => props.ml || 0}rem;
-  filter: grayscale(${(props) => (props.disabled ? 0.3 : 0)});
-  :focus {
-    outline: 2px solid ${theme.palette.black};
-    outline-offset: 0px;
-  }
-`;
+import { pinkButtonStyled } from '../atoms/PinkButton';
+
+const Link = pinkButtonStyled(ReachLink);
+
+// const Link = styled.a`
+//   color: inherit;
+//   text-decoration: none;
+//   background: ${theme.palette.pink};
+//   font-size: large;
+//   text-transform: uppercase;
+//   padding: 0.5rem 1rem;
+//   font-weight: bold;
+//   border: none;
+//   margin-left: ${(props) => props.ml || 0}rem;
+//   filter: grayscale(${(props) => (props.disabled ? 0.3 : 0)});
+//   :focus {
+//     outline: 2px solid ${theme.palette.black};
+//     outline-offset: 0px;
+//   }
+// `;
 
 const Form = styled.div`
   display: grid;
@@ -57,7 +61,7 @@ const JoinGame = () => {
       </P>
       <Actions>
         <Input value={key} onChange={(e) => set(e.target.value)}></Input>
-        <Link ml={0.5} disabled={key?.length < 1} href={`/${key}`}>
+        <Link ml={0.5} disabled={key?.length < 1} to={`/${key}`}>
           Lets's play
         </Link>
       </Actions>
