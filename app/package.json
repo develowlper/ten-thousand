@@ -17,6 +17,7 @@
     "react-query": "^1.2.9",
     "react-scripts": "3.4.1",
     "react-spring": "^8.0.27",
+    "react-test-renderer": "^16.13.1",
     "styled-components": "^5.1.0",
     "xstate": "^4.9.1"
   },
@@ -42,6 +43,7 @@
     ]
   },
   "devDependencies": {
+    "@testing-library/react-hooks": "^3.2.1",
     "prettier": "^2.0.5"
   }
 }
