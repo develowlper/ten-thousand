@@ -1,7 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Input default 1`] = `
+exports[`Storyshots atoms/Input Default 1`] = `
 <input
   className="sc-AxjAm PKNeD"
+  onChange={[Function]}
+  value=""
+/>
+`;
+
+exports[`Storyshots atoms/Input With Text 1`] = `
+<input
+  autoFocus={true}
+  className="sc-AxjAm PKNeD"
+  onChange={[Function]}
+  value="all-cats"
 />
 `;
