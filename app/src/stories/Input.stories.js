@@ -5,12 +5,25 @@ import Input from '../components/atoms/Input';
 const withHooks = (StoryFn) => <StoryFn />;
 
 export default {
-  title: Input.displayName,
+  title: `atoms/${Input.displayName}`,
   component: Input,
   decorators: [withHooks],
 };
 
 export const Initial = () => {
+  const [state, set] = useState('');
+
+  return (
+    <Input
+      value={state}
+      onChange={(e) => {
+        set(e.target.value);
+      }}
+    />
+  );
+};
+
+export const With_Text = () => {
   const [state, set] = useState('all-cats');
 
   return (
@@ -25,5 +38,5 @@ export const Initial = () => {
 };
 
 Initial.story = {
-  name: 'default',
+  name: 'Default',
 };
