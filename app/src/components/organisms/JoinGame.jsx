@@ -47,7 +47,7 @@ const P = styled.p`
 
 const JoinGame = () => {
   const [key, set] = useState(
-    randomWords({ exactly: 1, wordsPerString: 2, separator: '-' })
+    randomWords({ exactly: 1, wordsPerString: 2, separator: '-' }[0])
   );
 
   const joinGame = useCallback();
