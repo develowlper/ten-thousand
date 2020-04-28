@@ -1,13 +1,12 @@
 import React, { useState, useCallback } from 'react';
 import { Link as ReachLink } from '@reach/router';
 
-import randomWords from 'random-words';
-
 import styled from 'styled-components';
 
 import Input from '../atoms/Input';
 
 import { pinkButtonStyled } from '../atoms/PinkButton';
+import generateGameKey from '../../utils/generateGameKey';
 
 const Link = pinkButtonStyled(ReachLink);
 
@@ -46,9 +45,7 @@ const P = styled.p`
 `;
 
 const JoinGame = () => {
-  const [key, set] = useState(
-    randomWords({ exactly: 1, wordsPerString: 2, separator: '-' }[0])
-  );
+  const [key, set] = useState(generateGameKey());
 
   const joinGame = useCallback();
 

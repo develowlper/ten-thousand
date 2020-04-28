@@ -1,18 +1,27 @@
-import React from 'react';
-
-import { withKnobs } from '@storybook/addon-knobs';
-import { action } from '@storybook/addon-actions';
+import React, { useState } from 'react';
 
 import Input from '../components/atoms/Input';
+
+const withHooks = (StoryFn) => <StoryFn />;
 
 export default {
   title: Input.displayName,
   component: Input,
-  decorators: [withKnobs],
+  decorators: [withHooks],
 };
 
 export const Initial = () => {
-  return <Input />;
+  const [state, set] = useState('all-cats');
+
+  return (
+    <Input
+      autoFocus
+      value={state}
+      onChange={(e) => {
+        set(e.target.value);
+      }}
+    />
+  );
 };
 
 Initial.story = {
