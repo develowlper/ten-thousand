@@ -6,7 +6,7 @@ import { action } from '@storybook/addon-actions';
 import RoundedSqaure from '../components/atoms/RoundedSquare';
 
 export default {
-  title: RoundedSqaure.displayName,
+  title: `atoms/${RoundedSqaure.displayName}`,
   component: RoundedSqaure,
   decorators: [withKnobs],
 };

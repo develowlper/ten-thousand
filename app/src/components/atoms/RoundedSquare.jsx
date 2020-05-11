@@ -7,7 +7,7 @@ import theme from '../../styles/theme';
 const RoundedSquare = styled.div`
   height: ${({ size }) => size}px;
   width: ${({ size }) => size}px;
-  border: 1px ${theme.palette.pink} solid;
+  border: ${({ outline }) => outline}px ${theme.palette.pink} solid;
   border-radius: 5px;
 `;
 
@@ -15,10 +15,12 @@ RoundedSquare.displayName = 'RoundedSquare';
 
 RoundedSquare.propTypes = {
   size: PropTypes.number,
+  outline: PropTypes.number,
 };
 
 RoundedSquare.defaultProps = {
   size: 64,
+  outline: 2,
 };
 
 export default RoundedSquare;

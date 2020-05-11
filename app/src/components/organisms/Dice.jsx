@@ -1,8 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import nanoid from 'nano'
 
-const Dice = ({}) => {
-  return 'Dice';
+
+const Dice = ({ points }) => {
+  const dots = new Array(points).fill(nanoid(5));
+
+  return (
+    <RoundedSquare>
+      {dots.map((dot) => {
+        return <Dot />;
+      })}
+    </RoundedSquare>
+  );
 };
 
 Dice.displayName = 'Dice';
