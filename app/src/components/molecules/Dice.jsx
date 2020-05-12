@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import nanoid from 'nanoid';
 
@@ -72,9 +72,9 @@ const getStylePropsForDot = (count, points) => {
 
 const dots = new Array(6).fill(null).map(() => nanoid(5));
 
-const Dice = ({ points }) => {
+const Dice = ({ points, ...squareProps }) => {
   return (
-    <RoundedSquare outline={3}>
+    <RoundedSquare {...squareProps} outline={3}>
       <Box>
         {dots.map((key, index) => {
           return <Dot {...getStylePropsForDot(index + 1, points)} key={key} />;

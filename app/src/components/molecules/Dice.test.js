@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { render } from '@testing-library/react';
 import Dice from './Dice';
 
