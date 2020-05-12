@@ -24,6 +24,11 @@ const getStylePropsForDot = (count, points) => {
   const defaultPos = { top: 50, left: 50 };
   const hidden = { display: 'none', ...defaultPos };
 
+  if (points < 1 || points > 6) {
+    return hidden;
+  }
+
+  // eslint-disable-next-line default-case
   switch (count) {
     case 1:
       return points < 2 ? defaultPos : { left: 25, top: 75 };
@@ -65,8 +70,6 @@ const getStylePropsForDot = (count, points) => {
         default:
           return defaultPos;
       }
-    default:
-      return hidden;
   }
 };
 

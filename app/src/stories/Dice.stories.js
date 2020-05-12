@@ -15,7 +15,7 @@ export default {
   decorators: [withKnobs],
 };
 
-export const Initial = () => {
+export const Numbers = () => {
   return (
     <Box>
       <Dice points={1} />
@@ -24,6 +24,15 @@ export const Initial = () => {
       <Dice points={4} style={{ marginLeft: '8px' }} />
       <Dice points={5} style={{ marginLeft: '8px' }} />
       <Dice points={6} style={{ marginLeft: '8px' }} />
+    </Box>
+  );
+};
+
+export const NoNumbers = () => {
+  return (
+    <Box>
+      <Dice points={0} />
+      <Dice points={7} style={{ marginLeft: '8px' }} />
     </Box>
   );
 };
