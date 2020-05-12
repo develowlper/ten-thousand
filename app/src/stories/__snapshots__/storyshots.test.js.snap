@@ -1,67 +1,147 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots atoms/Dot Initial 1`] = `
+.c0 {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background: #FE46A5;
+}
+
 <div
-  className="sc-AxirZ dprqqr"
+  className="c0"
   size={12}
 />
 `;
 
 exports[`Storyshots atoms/Input Default 1`] = `
+.c0 {
+  font-size: large;
+  padding: 0.25rem 0.5rem;
+  border: 2px solid #fcb6da;
+}
+
+.c0:focus {
+  outline: 2px solid #FE46A5;
+  outline-offset: -2px;
+}
+
 <input
-  className="sc-AxhUy elqOWF"
+  className="c0"
   onChange={[Function]}
   value=""
 />
 `;
 
 exports[`Storyshots atoms/Input With Text 1`] = `
+.c0 {
+  font-size: large;
+  padding: 0.25rem 0.5rem;
+  border: 2px solid #fcb6da;
+}
+
+.c0:focus {
+  outline: 2px solid #FE46A5;
+  outline-offset: -2px;
+}
+
 <input
   autoFocus={true}
-  className="sc-AxhUy elqOWF"
+  className="c0"
   onChange={[Function]}
   value="all-cats"
 />
 `;
 
 exports[`Storyshots atoms/RoundedSquare Initial 1`] = `
+.c0 {
+  height: 64px;
+  width: 64px;
+  border: 2px #FE46A5 solid;
+  border-radius: 5px;
+}
+
 <div
-  className="sc-AxjAm iGwRzr"
+  className="c0"
   onClick={[Function]}
   size={64}
 />
 `;
 
-exports[`Storyshots organisms/Dice Initial 1`] = `
+exports[`Storyshots molecules/Dice Initial 1`] = `
+.c0 {
+  height: 64px;
+  width: 64px;
+  border: 3px #FE46A5 solid;
+  border-radius: 5px;
+}
+
+.c2 {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background: #FE46A5;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c3 {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background: #FE46A5;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  display: none;
+}
+
+.c1 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
 <div
-  className="sc-AxjAm gexqjG"
+  className="c0"
   size={64}
 >
   <div
-    className="sc-AxhCb kA-DoOT"
+    className="c1"
   >
     <div
-      className="sc-AxirZ sc-AxiKw jGLEmH"
+      className="sc-AxirZ c2"
       size={12}
     />
     <div
-      className="sc-AxirZ sc-AxiKw jGLEmH"
+      className="sc-AxirZ c2"
       size={12}
     />
     <div
-      className="sc-AxirZ sc-AxiKw jGLEmH"
+      className="sc-AxirZ c3"
+      display="none"
       size={12}
     />
     <div
-      className="sc-AxirZ sc-AxiKw jGLEmH"
+      className="sc-AxirZ c3"
+      display="none"
       size={12}
     />
     <div
-      className="sc-AxirZ sc-AxiKw jGLEmH"
+      className="sc-AxirZ c3"
+      display="none"
       size={12}
     />
     <div
-      className="sc-AxirZ sc-AxiKw jGLEmH"
+      className="sc-AxirZ c3"
+      display="none"
       size={12}
     />
   </div>
