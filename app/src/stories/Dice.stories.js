@@ -19,12 +19,12 @@ export default {
 export const Numbers = () => {
   return (
     <Box>
+      <Dice onClick={action('CLICK')} points={1} />
       <Dice
         onClick={action('CLICK')}
         points={2}
         style={{ marginLeft: '8px' }}
       />
-      <Dice onClick={action('CLICK')} points={1} />
       <Dice
         onClick={action('CLICK')}
         points={3}

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useCallback } from 'react';
 import PropTypes from 'prop-types';
 import nanoid from 'nanoid';
 
@@ -77,11 +77,21 @@ const getStylePropsForDot = (count, points) => {
 
 const dots = new Array(6).fill(null).map(() => nanoid(5));
 
-const Dice = ({ points, selected, onClick, ...squareProps }) => {
+const Dice = ({ points, selected, onSelect, ...squareProps }) => {
+  const select = useCallback(
+    (e) => {
+      const res = { ...e };
+      res.target.value = points;
+      onSelect(res);
+    },
+    [onSelect, points]
+  );
+
   return (
     <RoundedSquare
-      background={selected ? theme.palette.pink: 'white'}
-      onClick={onClick}
+      color={selected ? 'white' : theme.palette.pink}
+      background={selected ? theme.palette.pink : 'white'}
+      onClick={select}
       {...squareProps}
       outline={3}>
       <Box>
@@ -104,13 +114,13 @@ Dice.displayName = 'Dice';
 Dice.propTypes = {
   points: PropTypes.number.isRequired,
   selected: PropTypes.bool,
-  onClick: PropTypes.func,
+  onSelect: PropTypes.func,
 };
 
 Dice.defaultProps = {
   points: 1,
   selected: false,
-  onClick: () => {},
+  onSelect: () => {},
 };
 
 export default Dice;

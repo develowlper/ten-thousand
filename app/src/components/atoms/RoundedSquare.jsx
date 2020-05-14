@@ -6,8 +6,7 @@ import theme from '../../styles/theme';
 const RoundedSquare = styled.div`
   height: ${({ size }) => size}px;
   width: ${({ size }) => size}px;
-  border: ${({ outline }) => outline}px ${theme.palette.pink} solid;
-  border-radius: 5px;
+  border: ${({ outline }) => outline}px ${({ color }) => color} solid;
   background: ${({ background }) => background};
 `;
 
