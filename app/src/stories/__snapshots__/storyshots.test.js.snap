@@ -10,6 +10,7 @@ exports[`Storyshots atoms/Dot Initial 1`] = `
 
 <div
   className="c0"
+  color="#FE46A5"
   size={12}
 />
 `;
@@ -59,6 +60,7 @@ exports[`Storyshots atoms/RoundedSquare Initial 1`] = `
   width: 64px;
   border: 2px #FE46A5 solid;
   border-radius: 5px;
+  background: white;
 }
 
 <div
@@ -74,6 +76,7 @@ exports[`Storyshots molecules/Dice No Numbers 1`] = `
   width: 64px;
   border: 3px #FE46A5 solid;
   border-radius: 5px;
+  background: white;
 }
 
 .c3 {
@@ -108,6 +111,7 @@ exports[`Storyshots molecules/Dice No Numbers 1`] = `
 >
   <div
     className="c1"
+    onClick={[Function]}
     size={64}
   >
     <div
@@ -115,31 +119,37 @@ exports[`Storyshots molecules/Dice No Numbers 1`] = `
     >
       <div
         className="sc-AxirZ c3"
+        color="#FE46A5"
         display="none"
         size={12}
       />
       <div
         className="sc-AxirZ c3"
+        color="#FE46A5"
         display="none"
         size={12}
       />
       <div
         className="sc-AxirZ c3"
+        color="#FE46A5"
         display="none"
         size={12}
       />
       <div
         className="sc-AxirZ c3"
+        color="#FE46A5"
         display="none"
         size={12}
       />
       <div
         className="sc-AxirZ c3"
+        color="#FE46A5"
         display="none"
         size={12}
       />
       <div
         className="sc-AxirZ c3"
+        color="#FE46A5"
         display="none"
         size={12}
       />
@@ -147,6 +157,7 @@ exports[`Storyshots molecules/Dice No Numbers 1`] = `
   </div>
   <div
     className="c1"
+    onClick={[Function]}
     size={64}
     style={
       Object {
@@ -159,31 +170,37 @@ exports[`Storyshots molecules/Dice No Numbers 1`] = `
     >
       <div
         className="sc-AxirZ c3"
+        color="#FE46A5"
         display="none"
         size={12}
       />
       <div
         className="sc-AxirZ c3"
+        color="#FE46A5"
         display="none"
         size={12}
       />
       <div
         className="sc-AxirZ c3"
+        color="#FE46A5"
         display="none"
         size={12}
       />
       <div
         className="sc-AxirZ c3"
+        color="#FE46A5"
         display="none"
         size={12}
       />
       <div
         className="sc-AxirZ c3"
+        color="#FE46A5"
         display="none"
         size={12}
       />
       <div
         className="sc-AxirZ c3"
+        color="#FE46A5"
         display="none"
         size={12}
       />
@@ -198,6 +215,7 @@ exports[`Storyshots molecules/Dice Numbers 1`] = `
   width: 64px;
   border: 3px #FE46A5 solid;
   border-radius: 5px;
+  background: white;
 }
 
 .c3 {
@@ -206,14 +224,27 @@ exports[`Storyshots molecules/Dice Numbers 1`] = `
   border-radius: 100%;
   background: #FE46A5;
   position: absolute;
-  left: 50%;
-  top: 50%;
+  left: 25%;
+  top: 75%;
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
 }
 
 .c4 {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background: #FE46A5;
+  position: absolute;
+  left: 75%;
+  top: 25%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c5 {
   width: 12px;
   height: 12px;
   border-radius: 100%;
@@ -227,27 +258,14 @@ exports[`Storyshots molecules/Dice Numbers 1`] = `
   display: none;
 }
 
-.c5 {
-  width: 12px;
-  height: 12px;
-  border-radius: 100%;
-  background: #FE46A5;
-  position: absolute;
-  left: 25%;
-  top: 75%;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-}
-
 .c6 {
   width: 12px;
   height: 12px;
   border-radius: 100%;
   background: #FE46A5;
   position: absolute;
-  left: 75%;
-  top: 25%;
+  left: 50%;
+  top: 50%;
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
@@ -323,43 +341,7 @@ exports[`Storyshots molecules/Dice Numbers 1`] = `
 >
   <div
     className="c1"
-    size={64}
-  >
-    <div
-      className="c2"
-    >
-      <div
-        className="sc-AxirZ c3"
-        size={12}
-      />
-      <div
-        className="sc-AxirZ c3"
-        size={12}
-      />
-      <div
-        className="sc-AxirZ c4"
-        display="none"
-        size={12}
-      />
-      <div
-        className="sc-AxirZ c4"
-        display="none"
-        size={12}
-      />
-      <div
-        className="sc-AxirZ c4"
-        display="none"
-        size={12}
-      />
-      <div
-        className="sc-AxirZ c4"
-        display="none"
-        size={12}
-      />
-    </div>
-  </div>
-  <div
-    className="c1"
+    onClick={[Function]}
     size={64}
     style={
       Object {
@@ -371,30 +353,36 @@ exports[`Storyshots molecules/Dice Numbers 1`] = `
       className="c2"
     >
       <div
+        className="sc-AxirZ c3"
+        color="#FE46A5"
+        size={12}
+      />
+      <div
+        className="sc-AxirZ c4"
+        color="#FE46A5"
+        size={12}
+      />
+      <div
         className="sc-AxirZ c5"
-        size={12}
-      />
-      <div
-        className="sc-AxirZ c6"
-        size={12}
-      />
-      <div
-        className="sc-AxirZ c4"
+        color="#FE46A5"
         display="none"
         size={12}
       />
       <div
-        className="sc-AxirZ c4"
+        className="sc-AxirZ c5"
+        color="#FE46A5"
         display="none"
         size={12}
       />
       <div
-        className="sc-AxirZ c4"
+        className="sc-AxirZ c5"
+        color="#FE46A5"
         display="none"
         size={12}
       />
       <div
-        className="sc-AxirZ c4"
+        className="sc-AxirZ c5"
+        color="#FE46A5"
         display="none"
         size={12}
       />
@@ -402,6 +390,51 @@ exports[`Storyshots molecules/Dice Numbers 1`] = `
   </div>
   <div
     className="c1"
+    onClick={[Function]}
+    size={64}
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="sc-AxirZ c6"
+        color="#FE46A5"
+        size={12}
+      />
+      <div
+        className="sc-AxirZ c6"
+        color="#FE46A5"
+        size={12}
+      />
+      <div
+        className="sc-AxirZ c5"
+        color="#FE46A5"
+        display="none"
+        size={12}
+      />
+      <div
+        className="sc-AxirZ c5"
+        color="#FE46A5"
+        display="none"
+        size={12}
+      />
+      <div
+        className="sc-AxirZ c5"
+        color="#FE46A5"
+        display="none"
+        size={12}
+      />
+      <div
+        className="sc-AxirZ c5"
+        color="#FE46A5"
+        display="none"
+        size={12}
+      />
+    </div>
+  </div>
+  <div
+    className="c1"
+    onClick={[Function]}
     size={64}
     style={
       Object {
@@ -413,28 +446,34 @@ exports[`Storyshots molecules/Dice Numbers 1`] = `
       className="c2"
     >
       <div
-        className="sc-AxirZ c5"
+        className="sc-AxirZ c3"
+        color="#FE46A5"
+        size={12}
+      />
+      <div
+        className="sc-AxirZ c4"
+        color="#FE46A5"
         size={12}
       />
       <div
         className="sc-AxirZ c6"
+        color="#FE46A5"
         size={12}
       />
       <div
-        className="sc-AxirZ c3"
+        className="sc-AxirZ c6"
+        color="#FE46A5"
         size={12}
       />
       <div
-        className="sc-AxirZ c3"
-        size={12}
-      />
-      <div
-        className="sc-AxirZ c4"
+        className="sc-AxirZ c5"
+        color="#FE46A5"
         display="none"
         size={12}
       />
       <div
-        className="sc-AxirZ c4"
+        className="sc-AxirZ c5"
+        color="#FE46A5"
         display="none"
         size={12}
       />
@@ -442,6 +481,7 @@ exports[`Storyshots molecules/Dice Numbers 1`] = `
   </div>
   <div
     className="c1"
+    onClick={[Function]}
     size={64}
     style={
       Object {
@@ -453,28 +493,34 @@ exports[`Storyshots molecules/Dice Numbers 1`] = `
       className="c2"
     >
       <div
-        className="sc-AxirZ c5"
+        className="sc-AxirZ c3"
+        color="#FE46A5"
         size={12}
       />
       <div
-        className="sc-AxirZ c6"
+        className="sc-AxirZ c4"
+        color="#FE46A5"
         size={12}
       />
       <div
         className="sc-AxirZ c7"
+        color="#FE46A5"
         size={12}
       />
       <div
         className="sc-AxirZ c8"
+        color="#FE46A5"
         size={12}
       />
       <div
-        className="sc-AxirZ c4"
+        className="sc-AxirZ c5"
+        color="#FE46A5"
         display="none"
         size={12}
       />
       <div
-        className="sc-AxirZ c4"
+        className="sc-AxirZ c5"
+        color="#FE46A5"
         display="none"
         size={12}
       />
@@ -482,6 +528,7 @@ exports[`Storyshots molecules/Dice Numbers 1`] = `
   </div>
   <div
     className="c1"
+    onClick={[Function]}
     size={64}
     style={
       Object {
@@ -493,33 +540,40 @@ exports[`Storyshots molecules/Dice Numbers 1`] = `
       className="c2"
     >
       <div
-        className="sc-AxirZ c5"
+        className="sc-AxirZ c3"
+        color="#FE46A5"
         size={12}
       />
       <div
-        className="sc-AxirZ c6"
+        className="sc-AxirZ c4"
+        color="#FE46A5"
         size={12}
       />
       <div
         className="sc-AxirZ c7"
+        color="#FE46A5"
         size={12}
       />
       <div
         className="sc-AxirZ c8"
+        color="#FE46A5"
         size={12}
       />
       <div
-        className="sc-AxirZ c3"
+        className="sc-AxirZ c6"
+        color="#FE46A5"
         size={12}
       />
       <div
-        className="sc-AxirZ c3"
+        className="sc-AxirZ c6"
+        color="#FE46A5"
         size={12}
       />
     </div>
   </div>
   <div
     className="c1"
+    onClick={[Function]}
     size={64}
     style={
       Object {
@@ -531,27 +585,33 @@ exports[`Storyshots molecules/Dice Numbers 1`] = `
       className="c2"
     >
       <div
-        className="sc-AxirZ c5"
+        className="sc-AxirZ c3"
+        color="#FE46A5"
         size={12}
       />
       <div
-        className="sc-AxirZ c6"
+        className="sc-AxirZ c4"
+        color="#FE46A5"
         size={12}
       />
       <div
         className="sc-AxirZ c7"
+        color="#FE46A5"
         size={12}
       />
       <div
         className="sc-AxirZ c8"
+        color="#FE46A5"
         size={12}
       />
       <div
         className="sc-AxirZ c9"
+        color="#FE46A5"
         size={12}
       />
       <div
         className="sc-AxirZ c10"
+        color="#FE46A5"
         size={12}
       />
     </div>
@@ -559,12 +619,425 @@ exports[`Storyshots molecules/Dice Numbers 1`] = `
 </div>
 `;
 
+exports[`Storyshots molecules/Dice Selected 1`] = `
+.c1 {
+  height: 64px;
+  width: 64px;
+  border: 3px #FE46A5 solid;
+  border-radius: 5px;
+  background: #FE46A5;
+}
+
+.c3 {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c4 {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  display: none;
+}
+
+.c5 {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background: white;
+  position: absolute;
+  left: 25%;
+  top: 75%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c6 {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background: white;
+  position: absolute;
+  left: 75%;
+  top: 25%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c7 {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background: white;
+  position: absolute;
+  left: 25%;
+  top: 25%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c8 {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background: white;
+  position: absolute;
+  left: 75%;
+  top: 75%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c9 {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background: white;
+  position: absolute;
+  left: 25%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c10 {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background: white;
+  position: absolute;
+  left: 75%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c2 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    onClick={[Function]}
+    size={64}
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="sc-AxirZ c3"
+        color="white"
+        size={12}
+      />
+      <div
+        className="sc-AxirZ c3"
+        color="white"
+        size={12}
+      />
+      <div
+        className="sc-AxirZ c4"
+        color="white"
+        display="none"
+        size={12}
+      />
+      <div
+        className="sc-AxirZ c4"
+        color="white"
+        display="none"
+        size={12}
+      />
+      <div
+        className="sc-AxirZ c4"
+        color="white"
+        display="none"
+        size={12}
+      />
+      <div
+        className="sc-AxirZ c4"
+        color="white"
+        display="none"
+        size={12}
+      />
+    </div>
+  </div>
+  <div
+    className="c1"
+    onClick={[Function]}
+    size={64}
+    style={
+      Object {
+        "marginLeft": "8px",
+      }
+    }
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="sc-AxirZ c5"
+        color="white"
+        size={12}
+      />
+      <div
+        className="sc-AxirZ c6"
+        color="white"
+        size={12}
+      />
+      <div
+        className="sc-AxirZ c4"
+        color="white"
+        display="none"
+        size={12}
+      />
+      <div
+        className="sc-AxirZ c4"
+        color="white"
+        display="none"
+        size={12}
+      />
+      <div
+        className="sc-AxirZ c4"
+        color="white"
+        display="none"
+        size={12}
+      />
+      <div
+        className="sc-AxirZ c4"
+        color="white"
+        display="none"
+        size={12}
+      />
+    </div>
+  </div>
+  <div
+    className="c1"
+    onClick={[Function]}
+    size={64}
+    style={
+      Object {
+        "marginLeft": "8px",
+      }
+    }
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="sc-AxirZ c5"
+        color="white"
+        size={12}
+      />
+      <div
+        className="sc-AxirZ c6"
+        color="white"
+        size={12}
+      />
+      <div
+        className="sc-AxirZ c3"
+        color="white"
+        size={12}
+      />
+      <div
+        className="sc-AxirZ c3"
+        color="white"
+        size={12}
+      />
+      <div
+        className="sc-AxirZ c4"
+        color="white"
+        display="none"
+        size={12}
+      />
+      <div
+        className="sc-AxirZ c4"
+        color="white"
+        display="none"
+        size={12}
+      />
+    </div>
+  </div>
+  <div
+    className="c1"
+    onClick={[Function]}
+    size={64}
+    style={
+      Object {
+        "marginLeft": "8px",
+      }
+    }
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="sc-AxirZ c5"
+        color="white"
+        size={12}
+      />
+      <div
+        className="sc-AxirZ c6"
+        color="white"
+        size={12}
+      />
+      <div
+        className="sc-AxirZ c7"
+        color="white"
+        size={12}
+      />
+      <div
+        className="sc-AxirZ c8"
+        color="white"
+        size={12}
+      />
+      <div
+        className="sc-AxirZ c4"
+        color="white"
+        display="none"
+        size={12}
+      />
+      <div
+        className="sc-AxirZ c4"
+        color="white"
+        display="none"
+        size={12}
+      />
+    </div>
+  </div>
+  <div
+    className="c1"
+    onClick={[Function]}
+    size={64}
+    style={
+      Object {
+        "marginLeft": "8px",
+      }
+    }
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="sc-AxirZ c5"
+        color="white"
+        size={12}
+      />
+      <div
+        className="sc-AxirZ c6"
+        color="white"
+        size={12}
+      />
+      <div
+        className="sc-AxirZ c7"
+        color="white"
+        size={12}
+      />
+      <div
+        className="sc-AxirZ c8"
+        color="white"
+        size={12}
+      />
+      <div
+        className="sc-AxirZ c3"
+        color="white"
+        size={12}
+      />
+      <div
+        className="sc-AxirZ c3"
+        color="white"
+        size={12}
+      />
+    </div>
+  </div>
+  <div
+    className="c1"
+    onClick={[Function]}
+    size={64}
+    style={
+      Object {
+        "marginLeft": "8px",
+      }
+    }
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="sc-AxirZ c5"
+        color="white"
+        size={12}
+      />
+      <div
+        className="sc-AxirZ c6"
+        color="white"
+        size={12}
+      />
+      <div
+        className="sc-AxirZ c7"
+        color="white"
+        size={12}
+      />
+      <div
+        className="sc-AxirZ c8"
+        color="white"
+        size={12}
+      />
+      <div
+        className="sc-AxirZ c9"
+        color="white"
+        size={12}
+      />
+      <div
+        className="sc-AxirZ c10"
+        color="white"
+        size={12}
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots organisms/DiceBoard Initial 1`] = `"DiceBoard"`;
+
 exports[`Storyshots organisms/RollableDice Initial 1`] = `
 .c0 {
   height: 64px;
   width: 64px;
   border: 3px #FE46A5 solid;
   border-radius: 5px;
+  background: white;
 }
 
 .c2 {
@@ -597,31 +1070,37 @@ exports[`Storyshots organisms/RollableDice Initial 1`] = `
   >
     <div
       className="sc-AxirZ c2"
+      color="#FE46A5"
       display="none"
       size={12}
     />
     <div
       className="sc-AxirZ c2"
+      color="#FE46A5"
       display="none"
       size={12}
     />
     <div
       className="sc-AxirZ c2"
+      color="#FE46A5"
       display="none"
       size={12}
     />
     <div
       className="sc-AxirZ c2"
+      color="#FE46A5"
       display="none"
       size={12}
     />
     <div
       className="sc-AxirZ c2"
+      color="#FE46A5"
       display="none"
       size={12}
     />
     <div
       className="sc-AxirZ c2"
+      color="#FE46A5"
       display="none"
       size={12}
     />

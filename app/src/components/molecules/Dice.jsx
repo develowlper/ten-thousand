@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import nanoid from 'nanoid';
+
+import theme from '../../styles/theme';
 
 import RoundedSquare from '../atoms/RoundedSquare';
 import DotAtom from '../atoms/Dot';
@@ -75,12 +77,22 @@ const getStylePropsForDot = (count, points) => {
 
 const dots = new Array(6).fill(null).map(() => nanoid(5));
 
-const Dice = ({ points, ...squareProps }) => {
+const Dice = ({ points, selected, onClick, ...squareProps }) => {
   return (
-    <RoundedSquare {...squareProps} outline={3}>
+    <RoundedSquare
+      background={selected ? theme.palette.pink: 'white'}
+      onClick={onClick}
+      {...squareProps}
+      outline={3}>
       <Box>
         {dots.map((key, index) => {
-          return <Dot {...getStylePropsForDot(index + 1, points)} key={key} />;
+          return (
+            <Dot
+              color={selected ? 'white' : theme.palette.pink}
+              {...getStylePropsForDot(index + 1, points)}
+              key={key}
+            />
+          );
         })}
       </Box>
     </RoundedSquare>
@@ -91,10 +103,14 @@ Dice.displayName = 'Dice';
 
 Dice.propTypes = {
   points: PropTypes.number.isRequired,
+  selected: PropTypes.bool,
+  onClick: PropTypes.func,
 };
 
 Dice.defaultProps = {
   points: 1,
+  selected: false,
+  onClick: () => {},
 };
 
 export default Dice;

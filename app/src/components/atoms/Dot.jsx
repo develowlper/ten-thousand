@@ -6,17 +6,19 @@ const Dot = styled.div`
   width: ${({ size }) => size}px;
   height: ${({ size }) => size}px;
   border-radius: 100%;
-  background: ${theme.palette.pink};
+  background: ${({ color }) => color};
 `;
 
 Dot.displayName = 'Dot';
 
 Dot.propTypes = {
   size: PropTypes.number,
+  color: PropTypes.string,
 };
 
 Dot.defaultProps = {
   size: 12,
+  color: theme.palette.pink,
 };
 
 export default Dot;
