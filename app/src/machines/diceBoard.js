@@ -18,10 +18,10 @@ const machine = Machine(
         },
       },
       throwing: {
-        entry: assign({
-          slots: (c, _) =>
-            c.slots.map((x) => ({ points: x.locked ? x.points : 0, ...x })),
-        }),
+        entry: ['throwUnlocked'],
+        after: {
+          2000: 'idle',
+        },
       },
     },
   },

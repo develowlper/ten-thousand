@@ -1,6 +1,6 @@
-import React, { useRef, createRef } from 'react';
+import React, { createRef } from 'react';
 
-import { withKnobs, button } from '@storybook/addon-knobs';
+import { withKnobs, button, number } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
 
 import RollableDice from '../components/organisms/RollableDice';
@@ -15,11 +15,13 @@ export const Initial = () => {
   const ref = createRef();
 
   button('roll', () => ref.current.roll());
-
+  button('reset', () => ref.current.reset());
   return (
     <RollableDice
+      points={number('initial points', 1)}
+      runs={number('runs', 25)}
       onClick={action('CLICK')}
-      onPoints={action('points')}
+      onPoints={action('POINTS')}
       ref={ref}
     />
   );

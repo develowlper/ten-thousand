@@ -1,11 +1,11 @@
-import React, { useCallback, forwardRef, useImperativeHandle } from 'react';
+import React, { forwardRef, useImperativeHandle } from 'react';
 
 import styled from 'styled-components';
 
 import { useDiceBoard } from '../../machines/diceBoard';
-import DiceAtom from '../molecules/Dice';
+import RollableDice from './RollableDice';
 
-const Dice = styled(DiceAtom)`
+const Dice = styled(RollableDice)`
   margin: 8px;
 `;
 
@@ -15,7 +15,14 @@ const Box = styled.div`
 
 const DiceBoard = forwardRef(({ onSlotLocked }, ref) => {
   const [state, { throwDices, lock }] = useDiceBoard({
-    actions: { onSlotLocked },
+    actions: {
+      onSlotLocked,
+      throwUnlocked: (c) => {
+        c.slots
+          .filter((x) => !x.locked)
+          .forEach((slot) => slot.ref.current.roll());
+      },
+    },
   });
   const { slots } = state.context;
 
@@ -30,9 +37,10 @@ const DiceBoard = forwardRef(({ onSlotLocked }, ref) => {
   return (
     <Box>
       {slots.map((slot) => {
-        const { id, points, locked } = slot;
+        const { id, points, locked, ref } = slot;
         return (
           <Dice
+            ref={ref}
             selected={locked}
             key={id}
             points={points}

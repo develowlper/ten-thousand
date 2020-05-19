@@ -1386,6 +1386,19 @@ exports[`Storyshots organisms/RollableDice Initial 1`] = `
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
+}
+
+.c3 {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background: #FE46A5;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
   display: none;
 }
 
@@ -1407,35 +1420,33 @@ exports[`Storyshots organisms/RollableDice Initial 1`] = `
     <div
       className="sc-AxirZ c2"
       color="#FE46A5"
-      display="none"
       size={12}
     />
     <div
       className="sc-AxirZ c2"
       color="#FE46A5"
-      display="none"
       size={12}
     />
     <div
-      className="sc-AxirZ c2"
+      className="sc-AxirZ c3"
       color="#FE46A5"
       display="none"
       size={12}
     />
     <div
-      className="sc-AxirZ c2"
+      className="sc-AxirZ c3"
       color="#FE46A5"
       display="none"
       size={12}
     />
     <div
-      className="sc-AxirZ c2"
+      className="sc-AxirZ c3"
       color="#FE46A5"
       display="none"
       size={12}
     />
     <div
-      className="sc-AxirZ c2"
+      className="sc-AxirZ c3"
       color="#FE46A5"
       display="none"
       size={12}
