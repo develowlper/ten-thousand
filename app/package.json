@@ -8,7 +8,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "@xstate/react": "^0.8.1",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "lodash": "^4.17.15",
     "nanoid": "^2.1.11",
     "random-words": "^1.1.1",
